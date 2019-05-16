@@ -92,9 +92,9 @@ jobs:
         - run:
             name: Build and push Docker image to development
             command: |
-              docker build -t nexton-labs/node-starter-v2 .
+              docker build -t fabripautasso/node-starter-v2 .
               docker login -u $DOCKER_USER -p $DOCKER_PASS
-              docker push mravinale/node-starter
+              docker push fabripautasso/node-starter-v2
 
 workflows:
   version: 2
