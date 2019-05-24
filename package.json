@@ -28,7 +28,7 @@
     "env:local": "cross-env NODE_ENV=local",
     "env:dev": "cross-env NODE_ENV=development",
     "env:test": "cross-env NODE_ENV=test",
-    "heroku-postbuild": "yarn build:tsoa"
+    "heroku-postbuild": "yarn build:tsoa && tsc"
   },
   "author": "Mariano Ravinale",
   "license": "ISC",
