@@ -2,7 +2,7 @@
   "name": "node-starter-v2",
   "description": "Node starter project",
   "repository": "https://github.com/nexton-labs/node-starter-v2",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "logo": "http://www.nextonlabs.com/assets/nextonlabs-logo-129f5e4c4c5487c35a7e03642edac6a5.png",
   "keywords": ["node", "express", "static", "typescript", "inversify"],
   "env": {
     "PORT": {
