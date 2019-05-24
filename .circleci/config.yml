@@ -52,22 +52,6 @@ jobs:
           name: Unit Tests
           command: yarn test:unit
 
-  integration-tests:
-    docker:
-      - image: circleci/node:10.10.0-stretch-browsers-legacy
-      - image: circleci/postgres:9.6.2-alpine
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_DB: circle-test_test
-    working_directory: ~/repo
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/repo
-      - run:
-          name: Integration Tests
-          command: yarn test:integration
-
   build:
     docker:
       - image: circleci/node:10.10.0-stretch-browsers-legacy
@@ -108,9 +92,6 @@ workflows:
       - unit-tests:
           requires:
             - yarn
-      - integration-tests:
-          requires:
-            - yarn
       - build:
           requires:
             - yarn
@@ -121,7 +102,6 @@ workflows:
       - deploy-dev:
           requires:
             - unit-tests
-            - integration-tests
             - build
           filters:
             branches:
