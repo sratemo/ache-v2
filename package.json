@@ -50,6 +50,8 @@
     "sinon": "^4.5.0",
     "swagger-ui-express": "^3.0.6",
     "ts-mockito": "^2.3.1",
+    "ts-node": "^5.0.1",
+    "ts-node-dev": "^1.0.0-pre.18",
     "tsoa": "^2.1.4",
     "typeorm": "^0.2.9",
     "umzug": "^2.1.0",
@@ -79,8 +81,6 @@
     "pre-commit": "^1.2.2",
     "randomstring": "^1.1.5",
     "supertest": "^3.0.0",
-    "ts-node": "^5.0.1",
-    "ts-node-dev": "^1.0.0-pre.18",
     "tslint": "^5.9.1",
     "typescript": "^2.8.1",
     "yarn": "^1.5.1"
