@@ -27,7 +27,8 @@
     "copy:env": "cp -R ./src/config/env ./dist/src/config/env",
     "env:local": "cross-env NODE_ENV=local",
     "env:dev": "cross-env NODE_ENV=development",
-    "env:test": "cross-env NODE_ENV=test"
+    "env:test": "cross-env NODE_ENV=test",
+    "heroku-postbuild": "yarn build:tsoa"
   },
   "author": "Mariano Ravinale",
   "license": "ISC",
