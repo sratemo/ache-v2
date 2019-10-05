@@ -6,14 +6,12 @@ export class User {
   public id: string;
 
   @Column()
-  public name: string;
+  public firstname: string;
 
   @Column()
-  public email: string;
+  public lastName: string;
 
   @Column()
-  public phone?: string;
+  public emailAddress?: string;
 
-  @Column()
-  public skype?: string;
 }

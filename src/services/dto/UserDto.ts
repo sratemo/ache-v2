@@ -1,7 +1,6 @@
 
 export interface IUserDto {
-  name?: string;
-  email?: string;
-  phone?: string;
-  skype?: string;
+  firstname?: string;
+  lastName?: string;
+  emailAddress?: string;
 }
